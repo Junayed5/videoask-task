@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
     return (
-        <div>
+        <div className='mt-20'>
             <h3 className='text-xl font-semibold w-[500px] mx-auto'>Before you go, please leave your contact details so we can get back to you...</h3>
 
             <form className='w-[500px] mx-auto mt-6' action="">

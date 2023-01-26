@@ -1,18 +1,17 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import './App.css';
 import Section1 from './component/Section1';
 import Section2 from './component/Section2';
 
 function App() {
-
-  const [nextVideo, setNext] = useState(false)
+  const state = useSelector(state => state)
   return (
-    <div>
-      {
-        nextVideo === false ? <Section1 setNext={setNext} /> :
-          <Section2/>
-      }
-    </div>
+      <div>
+        {
+          state.nextVideo === false ? <Section1 /> :
+            <Section2 />
+        }
+      </div>
   );
 }
 

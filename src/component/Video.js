@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaPlay } from 'react-icons/fa'
 
 
 const Video = () => {
-
-    const [manageHover, setHover] = useState(false);
-    console.log(manageHover);
     return (
         <div>
             <p className={`absolute bg-white h-14 w-14 rounded-full top-96 left-72 `}><FaPlay className='mx-auto mt-5' /></p>

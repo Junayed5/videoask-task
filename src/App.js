@@ -1,16 +1,17 @@
+import { useState } from 'react';
 import './App.css';
-import Sidebar2 from './component/sidebar2';
-import SideForm from './component/sideForm';
-import Video from './component/Video';
-import Video2 from './component/Video2';
+import Section1 from './component/Section1';
+import Section2 from './component/Section2';
 
 function App() {
+
+  const [nextVideo, setNext] = useState(false)
   return (
-    <div className='grid grid-cols-2 '>
-      <Video/>
-      <SideForm/>
-      <Video2/>
-      <Sidebar2/>
+    <div>
+      {
+        nextVideo === false ? <Section1 setNext={setNext} /> :
+          <Section2/>
+      }
     </div>
   );
 }

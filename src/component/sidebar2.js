@@ -4,7 +4,6 @@ import Form from './Form';
 const Sidebar2 = () => {
 
     const [showForm, setForm] = useState(false);
-    console.log(showForm);
 
     return (
         <div>
